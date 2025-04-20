@@ -1,4 +1,4 @@
-name: Build Obfuscate BPB Panel
+name: Build Obfuscate Dongfang Dashboard
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
           npm install -g javascript-obfuscator
           sudo apt-get install -y unzip
 
-      - name: Download and extract latest BPB worker
+      - name: Download and extract latest Dongfang Dashboard worker
         run: |
           wget https://github.com/bia-pain-bache/BPB-Worker-Panel/releases/latest/download/worker.zip
           unzip -o worker.zip
@@ -37,6 +37,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           branch: main
-          commit_message: ':arrow_up: update latest bpb panel'
+          commit_message: ':arrow_up: update latest Dongfang Dashboard'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
           push_options: '--set-upstream'
