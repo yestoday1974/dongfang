@@ -32,6 +32,7 @@ jobs:
         run: |
           wget https://github.com/bia-pain-bache/BPB-Worker-Panel/releases/latest/download/worker.zip
           unzip -o worker.zip
+          rm worker.zip
     
       - name: 提交更改
         uses: stefanzweifel/git-auto-commit-action@v5
