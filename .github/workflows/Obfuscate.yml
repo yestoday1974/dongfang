@@ -31,6 +31,7 @@ jobs:
       - name: Download and extract latest Dongfang Dashboard worker
         run: |
           wget https://github.com/bia-pain-bache/BPB-Worker-Panel/releases/latest/download/worker.zip
+          rm _worker.js
           unzip -o worker.zip
           rm worker.zip
     
